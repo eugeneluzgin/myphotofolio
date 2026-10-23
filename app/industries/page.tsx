@@ -1,5 +1,6 @@
-import { ComingSoon } from '@/components/coming-soon';
+import { ContentPage } from '@/components/content-page';
+import { industriesPage } from '@/lib/content';
 
 export default function IndustriesPage() {
-  return <ComingSoon pageKey="industries" />;
+  return <ContentPage {...industriesPage} />;
 }

@@ -1,5 +1,6 @@
-import { ComingSoon } from '@/components/coming-soon';
+import { ContentPage } from '@/components/content-page';
+import { researchPage } from '@/lib/content';
 
 export default function ResearchPage() {
-  return <ComingSoon pageKey="research" />;
+  return <ContentPage {...researchPage} />;
 }

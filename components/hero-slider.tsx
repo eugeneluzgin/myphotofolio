@@ -124,7 +124,7 @@ export function HeroSlider() {
               Learn About Us
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="px-8 py-3.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/30 text-white font-bold text-sm hover:bg-white/20 transition-all duration-300 hover:scale-105"
             >
               Contact Us

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { BrainCircuit, Link2, Building2, Code2, Users, type LucideIcon } from 'lucide-react';
+import { BrainCircuit, Link2, Building2, Code2, Users, MonitorPlay, type LucideIcon } from 'lucide-react';
 import { Reveal } from '@/components/reveal';
 import { strengths } from '@/lib/content';
 
@@ -9,6 +9,7 @@ const iconMap: Record<string, LucideIcon> = {
   Building2,
   Code2,
   Users,
+  MonitorPlay,
 };
 
 export function Strengths() {
@@ -28,7 +29,7 @@ export function Strengths() {
             </h2>
             <div className="mx-auto w-24 h-1.5 bg-gradient-to-r from-blue-600 to-sky-400 rounded-full mb-6" />
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Five pillars of technical excellence that define our capability to
+              Core pillars of technical excellence that define our capability to
               deliver world-class products across the full technology spectrum.
             </p>
           </div>

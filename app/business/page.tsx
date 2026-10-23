@@ -1,5 +1,6 @@
-import { ComingSoon } from '@/components/coming-soon';
+import { ContentPage } from '@/components/content-page';
+import { businessPage } from '@/lib/content';
 
 export default function BusinessPage() {
-  return <ComingSoon pageKey="business" />;
+  return <ContentPage {...businessPage} />;
 }

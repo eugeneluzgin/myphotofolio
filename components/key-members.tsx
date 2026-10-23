@@ -1,6 +1,6 @@
 import { Badge } from '@/components/ui/badge';
 import { Reveal } from '@/components/reveal';
-import { keyMembers } from '@/lib/content';
+import { keyMembers, keyMembersIntro } from '@/lib/content';
 
 export function KeyMembers() {
   return (
@@ -17,17 +17,16 @@ export function KeyMembers() {
               Key Company Members
             </h2>
             <div className="mx-auto w-24 h-1.5 bg-gradient-to-r from-blue-600 to-sky-400 rounded-full mb-6" />
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              A dedicated team of experts across engineering, design, and strategy —
-              united by a passion for building world-class AI-powered products.
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              {keyMembersIntro}
             </p>
           </div>
         </Reveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex justify-center">
           {keyMembers.map((member, idx) => (
             <Reveal key={member.name} delay={(idx % 4) * 120} direction="up">
-              <div className="group overflow-hidden rounded-2xl bg-white border border-slate-100 hover:shadow-2xl hover:-translate-y-1.5 hover:border-blue-200 transition-all duration-500">
+              <div className="group overflow-hidden rounded-2xl bg-white border border-slate-100 hover:shadow-2xl hover:-translate-y-1.5 hover:border-blue-200 transition-all duration-500 w-full max-w-sm">
                 {/* Photo occupies ~60% of card area */}
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <img

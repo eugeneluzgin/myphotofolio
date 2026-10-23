@@ -1,5 +1,5 @@
-import { ComingSoon } from '@/components/coming-soon';
+import { ContactPageView } from '@/components/contact-page';
 
 export default function ContactPage() {
-  return <ComingSoon pageKey="contact" />;
+  return <ContactPageView />;
 }

@@ -4,9 +4,9 @@ import { Logo } from '@/components/logo';
 import { footerLinks, companyInfo } from '@/lib/content';
 
 const socials = [
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/luzgin/', label: 'LinkedIn' },
   { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Github, href: '#', label: 'GitHub' },
+  { icon: Github, href: 'https://github.com/eugeneluzgin', label: 'GitHub' },
 ];
 
 export function SiteFooter() {
