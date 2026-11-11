@@ -75,6 +75,7 @@ export function SiteFooter() {
                   Phone
                 </p>
                 <p className="text-sm text-slate-300 font-medium">{companyInfo.phone}</p>
+                <p className="text-sm text-slate-300 font-medium">{companyInfo.salesPhone}</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -86,6 +87,7 @@ export function SiteFooter() {
                   Email
                 </p>
                 <p className="text-sm text-slate-300 font-medium">{companyInfo.email}</p>
+                <p className="text-sm text-slate-300 font-medium">{companyInfo.salesEmail}</p>
               </div>
             </div>
             <div className="flex items-center gap-3">

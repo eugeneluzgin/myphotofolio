@@ -61,7 +61,7 @@ export function ContactPageView() {
 
       <section className="relative py-8 lg:py-12 section-gradient overflow-hidden">
         <div className="relative mx-auto max-w-7xl px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {contactPage.channels.map((channel, idx) => {
               const Icon = iconMap[channel.icon] ?? Mail;
               return (
@@ -137,7 +137,9 @@ export function ContactPageView() {
                   <p className="text-sm mb-4">{companyInfo.executives}</p>
                   <div className="space-y-2 text-sm">
                     <p>{companyInfo.phone}</p>
+                    <p>{companyInfo.salesPhone}</p>
                     <p>{companyInfo.email}</p>
+                    <p>{companyInfo.salesEmail}</p>
                     <p className="leading-relaxed">{companyInfo.location}</p>
                   </div>
                   <div className="flex gap-4 mt-5 pt-5 border-t border-slate-700">

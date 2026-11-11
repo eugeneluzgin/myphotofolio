@@ -15,7 +15,9 @@ export const companyInfo = {
   established: 'Mar 2025',
   location: '858 24th Ave NW, Naples, FL 34120, United States',
   phone: '+1 (239) 383-5161',
+  salesPhone: '+1 (213) 529-0316',
   email: 'eugene@atexsoft.com',
+  salesEmail: 'sales@atexsoft.com',
   website: 'atexsoft.com',
   directors: 'Eugene Luzgin',
   executives: 'CEO: Eugene Luzgin',
@@ -222,14 +224,28 @@ export const contactPage = {
       label: 'Phone',
       value: '+1 (239) 383-5161',
       href: 'tel:+12393835161',
-      detail: 'Weekdays, Eastern Time',
+      detail: 'General inquiries · Eastern Time',
+    },
+    {
+      icon: 'Phone',
+      label: 'Sales Phone',
+      value: '+1 (213) 529-0316',
+      href: 'tel:+12135290316',
+      detail: 'Sales & new engagements',
     },
     {
       icon: 'Mail',
       label: 'Email',
       value: 'eugene@atexsoft.com',
       href: 'mailto:eugene@atexsoft.com',
-      detail: 'Primary inquiry channel',
+      detail: 'Leadership & general contact',
+    },
+    {
+      icon: 'Mail',
+      label: 'Sales Email',
+      value: 'sales@atexsoft.com',
+      href: 'mailto:sales@atexsoft.com',
+      detail: 'Business & project inquiries',
     },
     {
       icon: 'MapPin',
@@ -612,5 +628,5 @@ export const newsPage = {
     },
   ],
   closing:
-    'For media, partnership, or engagement inquiries, contact us at eugene@atexsoft.com or +1 (239) 383-5161.',
+    'For media, partnership, or engagement inquiries, contact us at sales@atexsoft.com, eugene@atexsoft.com, +1 (213) 529-0316, or +1 (239) 383-5161.',
 };

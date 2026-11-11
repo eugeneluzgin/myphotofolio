@@ -34,7 +34,7 @@ export function ContactForm() {
         .join('\n')
     );
 
-    window.location.href = `mailto:${companyInfo.email}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${companyInfo.salesEmail}?subject=${subject}&body=${body}`;
     setSent(true);
   }
 
@@ -47,7 +47,7 @@ export function ContactForm() {
         <h3 className="text-xl font-bold text-slate-900 mb-2">Ready to send</h3>
         <p className="text-slate-600 leading-relaxed max-w-md mx-auto mb-6">
           Your email client should open with your message addressed to{' '}
-          {companyInfo.email}. If it does not, email us directly and we will
+          {companyInfo.salesEmail}. If it does not, email us directly and we will
           respond promptly.
         </p>
         <button

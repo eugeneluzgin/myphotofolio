@@ -21,6 +21,9 @@ const overview: { icon: LucideIcon; label: string; value: string }[] = [
   { icon: Briefcase, label: 'Executives', value: companyInfo.executives },
   { icon: GraduationCap, label: 'Technical Advisors', value: companyInfo.technicalAdvisors },
   { icon: Phone, label: 'Contact Number', value: companyInfo.phone },
+  { icon: Phone, label: 'Sales Phone', value: companyInfo.salesPhone },
+  { icon: Mail, label: 'Email', value: companyInfo.email },
+  { icon: Mail, label: 'Sales Email', value: companyInfo.salesEmail },
 ];
 
 export function CompanyOverview() {
@@ -79,11 +82,17 @@ export function CompanyOverview() {
         </Reveal>
 
         <Reveal delay={400}>
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="flex items-center gap-3 p-5 rounded-2xl bg-gradient-to-br from-blue-50 to-sky-50 border border-blue-100 hover:shadow-lg transition-all">
               <Phone className="h-5 w-5 text-blue-600 shrink-0" />
               <span className="text-sm text-slate-700 font-medium">
                 {companyInfo.phone}
+              </span>
+            </div>
+            <div className="flex items-center gap-3 p-5 rounded-2xl bg-gradient-to-br from-blue-50 to-sky-50 border border-blue-100 hover:shadow-lg transition-all">
+              <Phone className="h-5 w-5 text-blue-600 shrink-0" />
+              <span className="text-sm text-slate-700 font-medium">
+                {companyInfo.salesPhone}
               </span>
             </div>
             <div className="flex items-center gap-3 p-5 rounded-2xl bg-gradient-to-br from-blue-50 to-sky-50 border border-blue-100 hover:shadow-lg transition-all">
@@ -93,6 +102,12 @@ export function CompanyOverview() {
               </span>
             </div>
             <div className="flex items-center gap-3 p-5 rounded-2xl bg-gradient-to-br from-blue-50 to-sky-50 border border-blue-100 hover:shadow-lg transition-all">
+              <Mail className="h-5 w-5 text-blue-600 shrink-0" />
+              <span className="text-sm text-slate-700 font-medium">
+                {companyInfo.salesEmail}
+              </span>
+            </div>
+            <div className="flex items-center gap-3 p-5 rounded-2xl bg-gradient-to-br from-blue-50 to-sky-50 border border-blue-100 hover:shadow-lg transition-all sm:col-span-2 lg:col-span-1">
               <Globe className="h-5 w-5 text-blue-600 shrink-0" />
               <span className="text-sm text-slate-700 font-medium">
                 {companyInfo.website}
