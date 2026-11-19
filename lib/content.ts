@@ -305,10 +305,6 @@ export const productsPage = {
           src: '/products/tv-camera-ui-record.jpg',
           alt: 'Qt/QML desktop app recording interface',
         },
-        {
-          src: '/products/tv-camera-ui-playback.jpg',
-          alt: 'Qt/QML desktop app playback control interface',
-        },
       ],
     },
     {
