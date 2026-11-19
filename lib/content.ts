@@ -216,18 +216,19 @@ export const footerLinks = {
 // ============================================================
 // Products Page
 // ============================================================
+export function formatProductNumber(index: number) {
+  return `Product ${index}`;
+}
+
 export const productsPage = {
   eyebrow: 'Product Portfolio',
   title: 'Products',
   subtitle:
-    'Selected productions across STEM toys and professional systems — from modular children\u2019s hardware to TV camera facilities with desktop control software.',
-  intro: [
-    'Browse the catalog below, then open any product for image views, engineering highlights, and video when available.',
-  ],
+    'A growing portfolio of products we design, engineer, and manufacture — from concept through production.',
+  intro: [],
   catalogTitle: 'All Products',
   catalogIntro:
-    'Select a product to view its gallery, technical details, and advertising video.',
-  detailTitle: 'Product Details',
+    'Select a product to open its detail page with gallery, technical details, and media.',
   products: [
     {
       id: 'modular-stem-play-system',
@@ -310,9 +311,42 @@ export const productsPage = {
         },
       ],
     },
+    {
+      id: 'lidar-auto-clean-robot',
+      name: 'LiDAR Auto-Clean Robot',
+      industries: ['Manufacturing & Industrial'],
+      coverImage: '/products/lidar-robot-home.jpg',
+      summary:
+        'An autonomous cleaning robot we designed and manufactured end-to-end — using 360\u00b0 LiDAR and TinyML on ESP32-S3 for navigation, obstacle understanding, and real-time motion control.',
+      highlights: [
+        'Full product design and manufacture: mechanics, electronics, firmware, and system integration',
+        'ESP32-S3 main controller with on-device TinyML inference (dual-core, Wi-Fi / BLE)',
+        '360\u00b0 LiDAR mapping with proximity, bump, IMU, and wheel-encoder sensing',
+        'Sense \u2192 Understand \u2192 Decide \u2192 Act pipeline for navigation and cleaning motor control',
+        'Wi-Fi connectivity for app/OTA updates, autonomous path planning, and docking workflows',
+      ],
+      images: [
+        {
+          src: '/products/lidar-robot-home.jpg',
+          alt: 'LiDAR auto-clean robot in a modern home',
+        },
+        {
+          src: '/products/lidar-robot-infographic-1.jpg',
+          alt: 'Autonomous cleaning robot TinyML system overview',
+        },
+        {
+          src: '/products/lidar-robot-infographic-2.jpg',
+          alt: 'ESP32-S3 TinyML sensing architecture',
+        },
+        {
+          src: '/products/lidar-robot-infographic-3.jpg',
+          alt: 'Exploded hardware view of LiDAR cleaning robot',
+        },
+      ],
+    },
   ],
   closing:
-    'This portfolio grows as new STEM toys and professional systems are designed and delivered. Share your next product concept — we will help take it from idea to production-ready hardware and software.',
+    'This portfolio continues to expand as new products are designed and delivered. Share your next concept — we will help take it from idea to production-ready hardware and software.',
 };
 
 // --- Placeholder page config ---
