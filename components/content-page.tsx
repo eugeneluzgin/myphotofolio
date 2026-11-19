@@ -5,7 +5,9 @@ import {
   BrainCircuit,
   Building,
   Building2,
+  CircuitBoard,
   Clapperboard,
+  CloudCog,
   Code2,
   Factory,
   FlaskConical,
@@ -17,7 +19,9 @@ import {
   MonitorPlay,
   Network,
   ShieldCheck,
+  Shield,
   ShoppingBag,
+  Trophy,
   Truck,
   Users,
   type LucideIcon,
@@ -46,6 +50,10 @@ const iconMap: Record<string, LucideIcon> = {
   Lightbulb,
   MonitorPlay,
   Clapperboard,
+  CircuitBoard,
+  CloudCog,
+  Shield,
+  Trophy,
 };
 
 type SectionItem = {

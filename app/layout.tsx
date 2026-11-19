@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://atexsoft.vercel.app'),
   title: 'AtexSoft LLC — Innovate. Build. Transform.',
   description:
-    'AtexSoft LLC builds world-class technology across AI agent development, blockchain solutions, architecture & design, software development, and consulting & advisory services.',
+    'AtexSoft LLC builds world-class technology across AI agents, blockchain, IoT & embedded systems, cloud architecture & DevOps, software development, and consulting.',
   openGraph: {
     title: 'AtexSoft LLC — Innovate. Build. Transform.',
     description:
-      'AtexSoft LLC builds world-class technology across AI agent development, blockchain solutions, architecture & design, software development, and consulting & advisory services.',
+      'AtexSoft LLC builds world-class technology across AI agents, blockchain, IoT & embedded systems, cloud architecture & DevOps, software development, and consulting.',
   },
   twitter: {
     card: 'summary_large_image',

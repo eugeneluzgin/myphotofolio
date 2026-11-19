@@ -11,7 +11,7 @@ export const companyInfo = {
   legalName: 'AtexSoft LLC',
   tagline: 'Innovate · Build · Transform',
   description:
-    'AtexSoft LLC builds world-class technology across AI agents, blockchain, video streaming & DRM, architecture & design, software development, and strategic consulting — helping partners innovate, build, and transform.',
+    'AtexSoft LLC builds world-class technology across AI agents, blockchain, video streaming & DRM, IoT & embedded systems, cloud architecture & DevOps, software/ML/AI engineering, and strategic consulting — helping partners innovate, build, and transform.',
   established: 'Mar 2025',
   location: '858 24th Ave NW, Naples, FL 34120, United States',
   phone: '+1 (239) 383-5161',
@@ -30,6 +30,7 @@ export const navItems = [
   { label: 'Company', href: '/' },
   { label: 'Business', href: '/business' },
   { label: 'Industries', href: '/industries' },
+  { label: 'Products', href: '/products' },
   { label: 'Research', href: '/research' },
   { label: 'News', href: '/news' },
   { label: 'Contact Us', href: '/contact' },
@@ -67,7 +68,7 @@ export const heroSlides = [
     eyebrow: 'AtexSoft LLC',
     title: 'Company Information',
     description:
-      'Deep technical capability across AI agent development, blockchain solutions, video streaming with DRM, and strategic consulting & advisory services.',
+      'Deep technical capability across AI agent development, blockchain, video streaming with DRM, IoT, firmware, ROS, and strategic consulting & advisory services.',
   },
 ];
 
@@ -82,7 +83,7 @@ export const founders = [
 ];
 
 export const foundersMessage =
-  'At AtexSoft, we believe technology should do more than function — it should transform. Our team unites deep expertise in AI agent development, blockchain engineering, video streaming and content protection, enterprise architecture, and software craftsmanship to help our partners move from idea to impact. Every engagement is guided by one question: does this genuinely move our clients forward?';
+  'At AtexSoft, we believe technology should do more than function — it should transform. Our team unites deep expertise in AI agent development, blockchain engineering, video streaming and content protection, IoT and embedded systems, cloud architecture and DevOps, and software craftsmanship to help our partners move from idea to impact. Every engagement is guided by one question: does this genuinely move our clients forward?';
 
 // --- Strengths ---
 export const strengths = [
@@ -90,22 +91,22 @@ export const strengths = [
     icon: 'BrainCircuit',
     title: 'AI Agent Development',
     description:
-      'Intelligent, autonomous AI agents designed to automate workflows and augment decision-making — built on the latest LLM and agentic frameworks.',
+      'Production AI agents powered by LLMs and MCP servers — secure tool use, multi-agent orchestration, and domain solutions for military, healthcare, financial, sports, and more.',
     image: '/brand/services/ai-agent.png',
   },
   {
-    icon: 'Link2',
-    title: 'Blockchain Solutions',
+    icon: 'CloudCog',
+    title: 'Architecture, Cloud & DevOps',
     description:
-      'Secure, scalable blockchain systems — from smart contracts to full decentralized architectures — engineered for real-world reliability.',
-    image: '/brand/services/blockchain.png',
+      'Enterprise architecture and cloud platforms on Azure and AWS — with infrastructure as code, CI/CD, MLOps, containers, and reliable DevOps delivery.',
+    image: '/brand/services/architecture.png',
   },
   {
-    icon: 'Building2',
-    title: 'Architecture & Design',
+    icon: 'CircuitBoard',
+    title: 'IoT, Firmware & Embedded',
     description:
-      'Enterprise-grade system architecture and design that balances scalability, maintainability, and performance from day one.',
-    image: '/brand/services/architecture.png',
+      'Connected devices and hardware systems — IoT platforms, firmware, ROS robotics, PCB design, and mechanical engineering from concept to production.',
+    image: '/brand/services/iot-embedded.svg',
   },
   {
     icon: 'MonitorPlay',
@@ -116,10 +117,17 @@ export const strengths = [
   },
   {
     icon: 'Code2',
-    title: 'Software Development',
+    title: 'Software, ML & AI Engineering',
     description:
-      'End-to-end software engineering across web, cloud, and enterprise platforms — built to perform flawlessly under real-world conditions.',
+      'Full-stack software engineering integrated with machine learning and AI — from product platforms to model-powered features in production.',
     image: '/brand/services/software-development.png',
+  },
+  {
+    icon: 'Link2',
+    title: 'Blockchain Solutions',
+    description:
+      'Secure, scalable blockchain systems with quantum-ready integration — from smart contracts to decentralized architectures engineered for real-world reliability.',
+    image: '/brand/services/blockchain.png',
   },
   {
     icon: 'Users',
@@ -177,7 +185,7 @@ export const keyMembers = [
 ];
 
 export const keyMembersIntro =
-  'Alongside leadership, AtexSoft is backed by more than 20 senior developers spanning AI agent systems, blockchain engineering, video streaming and DRM, enterprise architecture, full-stack software, cloud infrastructure, and technical consulting. This experienced bench partners closely with clients to design, build, and ship production-grade solutions.';
+  'Alongside leadership, AtexSoft is backed by more than 20 senior developers spanning AI agent systems, blockchain engineering, video streaming and DRM, IoT and embedded systems, cloud architecture and DevOps, software/ML/AI engineering, and technical consulting. This experienced bench partners closely with clients to design, build, and ship production-grade solutions.';
 
 // --- Footer Links ---
 export const footerLinks = {
@@ -189,18 +197,122 @@ export const footerLinks = {
   ],
   Business: [
     { label: 'AI Agent Development', href: '/business' },
-    { label: 'Blockchain Solutions', href: '/business' },
+    { label: 'Architecture, Cloud & DevOps', href: '/business' },
+    { label: 'IoT, Firmware & Embedded', href: '/business' },
     { label: 'Video Streaming & DRM', href: '/business' },
-    { label: 'Architecture & Design', href: '/business' },
-    { label: 'Software Development', href: '/business' },
+    { label: 'Software, ML & AI Engineering', href: '/business' },
+    { label: 'Blockchain Solutions', href: '/business' },
     { label: 'Consultant & Advisory', href: '/business' },
   ],
   Resources: [
     { label: 'Industries', href: '/industries' },
+    { label: 'Products', href: '/products' },
     { label: 'Research', href: '/research' },
     { label: 'News', href: '/news' },
     { label: 'Contact Us', href: '/contact' },
   ],
+};
+
+// ============================================================
+// Products Page
+// ============================================================
+export const productsPage = {
+  eyebrow: 'Product Portfolio',
+  title: 'Products',
+  subtitle:
+    'Selected productions across STEM toys and professional systems — from modular children\u2019s hardware to TV camera facilities with desktop control software.',
+  intro: [
+    'Browse the catalog below, then open any product for image views, engineering highlights, and video when available.',
+  ],
+  catalogTitle: 'All Products',
+  catalogIntro:
+    'Select a product to view its gallery, technical details, and advertising video.',
+  detailTitle: 'Product Details',
+  products: [
+    {
+      id: 'modular-stem-play-system',
+      name: 'Modular STEM Play System',
+      industries: ['Manufacturing & Industrial', 'STEM Education'],
+      coverImage: '/products/smart-factory-hero.jpg',
+      summary:
+        'A modular wooden STEM toy that expands from a smart factory production line into connected city and smart-home play — engineered with electronics-ready baseplates, magnetic interconnects, sensors, lighting, and manufacturable moulded parts.',
+      highlights: [
+        'Interlocking modules with shared ports for expandable layouts',
+        'Factory line with power station, conveyor, magnetic crane, and display output',
+        'Smart-house and city modules with elevators, LEDs, and open-ended play',
+        'Magnetic + pogo-pin connectors for durable child-safe module linking',
+        'End-to-end design: concept, mechanics, electronics integration, and DFM',
+      ],
+      images: [
+        {
+          src: '/products/stem-city-play.jpg',
+          alt: 'Child playing with modular STEM city set',
+        },
+        {
+          src: '/products/smart-factory-hero.jpg',
+          alt: 'Full modular STEM factory line assembly',
+        },
+        {
+          src: '/products/factory-playset.png',
+          alt: 'Factory playset with conveyor and robotic arm',
+        },
+        {
+          src: '/products/factory-labeled.png',
+          alt: 'Factory module with sensors, conveyor, and magnetic cubes',
+        },
+        {
+          src: '/products/factory-dual-view.png',
+          alt: 'Factory module dual view with chute and detent crane',
+        },
+        {
+          src: '/products/magnetic-connector.png',
+          alt: 'Magnetic pogo-pin connector module',
+        },
+      ],
+      video: {
+        title: 'Product Advertising Video',
+        description:
+          'Watch the advertising video for our modular children\u2019s STEM toy system.',
+        embedUrl:
+          'https://drive.google.com/file/d/1HKFYaiD-1brs7em_hVpYaIZPEVf1kDVT/preview',
+      },
+    },
+    {
+      id: 'tv-camera-facility-control',
+      name: 'TV Camera Facility & Control Application',
+      industries: ['Media & Entertainment', 'Manufacturing & Industrial'],
+      coverImage: '/products/tv-camera-rig.jpg',
+      summary:
+        'A professional TV camera facility with motorized rail/gimbal hardware and a Qt/QML desktop control application — communicating over CAN bus for precise pan-tilt-roll, tracking, and move recording workflows.',
+      highlights: [
+        'Camera facility hardware with multi-axis rig and linear rail motion',
+        'CAN bus communication between facility systems and the desktop controller',
+        'Qt/QML desktop application for PTR, tracking, FIZ, record, and playback control',
+        'Keyframe move recording, timecode/FPS status, and operator-ready transport controls',
+        'Workshop-proven integration of mechanics, electronics, and real-time control software',
+      ],
+      images: [
+        {
+          src: '/products/tv-camera-rig.jpg',
+          alt: 'TV camera facility rig on motorized rail in workshop',
+        },
+        {
+          src: '/products/tv-camera-workshop.jpg',
+          alt: 'Camera facility workshop overview with rail system',
+        },
+        {
+          src: '/products/tv-camera-ui-record.jpg',
+          alt: 'Qt/QML desktop app recording interface',
+        },
+        {
+          src: '/products/tv-camera-ui-playback.jpg',
+          alt: 'Qt/QML desktop app playback control interface',
+        },
+      ],
+    },
+  ],
+  closing:
+    'This portfolio grows as new STEM toys and professional systems are designed and delivered. Share your next product concept — we will help take it from idea to production-ready hardware and software.',
 };
 
 // --- Placeholder page config ---
@@ -213,7 +325,7 @@ export const contactPage = {
   eyebrow: 'Get in Touch',
   title: 'Contact Us',
   subtitle:
-    'Start a conversation about AI, blockchain, secure streaming, architecture, or software delivery.',
+    'Start a conversation about AI, blockchain, secure streaming, IoT & embedded systems, cloud architecture & DevOps, or software delivery.',
   intro: [
     'Whether you are exploring a new platform, modernizing an existing system, or need senior technical advisory, our team responds with clear next steps and practical recommendations.',
     'Share a brief overview of your goals and timeline — we typically reply within one business day.',
@@ -266,7 +378,7 @@ export const contactPage = {
     {
       title: 'New Engagements',
       description:
-        'Discovery conversations for AI agents, blockchain, video streaming & DRM, architecture, and full-stack delivery.',
+        'Discovery conversations for AI agents, blockchain, video streaming & DRM, IoT and embedded systems, cloud architecture & DevOps, and full-stack delivery.',
     },
     {
       title: 'Advisory & Assessment',
@@ -299,7 +411,7 @@ export const businessPage = {
   subtitle:
     'End-to-end technology services that turn strategy into production systems.',
   intro: [
-    'AtexSoft LLC partners with organizations that need more than incremental software delivery. We design, engineer, and operationalize intelligent platforms — from AI agents and blockchain systems to video streaming with DRM, enterprise architecture, and full-stack product development.',
+    'AtexSoft LLC partners with organizations that need more than incremental software delivery. We design, engineer, and operationalize intelligent platforms — from AI agents and blockchain systems to video streaming with DRM, IoT and embedded hardware, cloud architecture and DevOps, and full-stack product development.',
     'Every engagement is led by senior practitioners and structured for measurable outcomes: clearer decisions, faster delivery cycles, stronger security posture, and technology that scales with the business.',
   ],
   sections: [
@@ -307,22 +419,38 @@ export const businessPage = {
       icon: 'BrainCircuit',
       title: 'AI Agent Development',
       summary:
-        'Autonomous and assisted AI agents that execute workflows, retrieve knowledge, and support high-stakes decisions.',
+        'Enterprise-grade AI agents built on modern LLMs, MCP tool servers, and governed orchestration — designed for regulated and high-stakes environments.',
       points: [
-        'Multi-agent orchestration with tool use, memory, and human-in-the-loop controls',
-        'Production RAG systems grounded in enterprise data and access policies',
-        'Evaluation, monitoring, and guardrails for reliable agent behavior in production',
+        'LLM-powered agents with planning, memory, retrieval, and structured tool calling',
+        'MCP (Model Context Protocol) servers that securely expose enterprise systems, data sources, and APIs to agents',
+        'Multi-agent orchestration, human-in-the-loop controls, evaluation harnesses, and production guardrails',
+        'Domain agents for military, healthcare, financial, sports, and other high-stakes industries',
       ],
     },
     {
-      icon: 'Link2',
-      title: 'Blockchain Solutions',
+      icon: 'CloudCog',
+      title: 'Architecture, Cloud & DevOps',
       summary:
-        'Secure distributed systems engineered for transparency, auditability, and real-world operational constraints.',
+        'Enterprise architecture paired with cloud and DevOps engineering that keeps systems scalable, secure, and operationally ready.',
       points: [
-        'Smart contract design, implementation, and security-focused review practices',
-        'Tokenization, settlement, and decentralized workflow architectures',
-        'Integration of on-chain and off-chain systems for enterprise environments',
+        'Target-state architecture, domain modeling, and modernization roadmaps',
+        'Cloud platforms on Azure, AWS, and multi-cloud environments with hybrid designs',
+        'Infrastructure as code, containers, and Kubernetes operations',
+        'Quality engineering, MLOps practices, CI/CD, and maintainable delivery pipelines from day one',
+        'Observability, reliability engineering, and deployment standards for production delivery',
+      ],
+    },
+    {
+      icon: 'CircuitBoard',
+      title: 'IoT, Firmware & Embedded',
+      summary:
+        'End-to-end hardware and embedded product engineering — from electronics and mechanics to connected device software.',
+      points: [
+        'IoT device platforms, sensor integration, edge connectivity, and cloud device management',
+        'Embedded firmware development for microcontrollers and real-time systems',
+        'ROS / ROS 2 robotics stacks, perception pipelines, and autonomous control software',
+        'PCB schematic capture, layout, prototyping, bring-up, and production readiness',
+        'Mechanical design, enclosures, thermal considerations, and DFM for manufacturable products',
       ],
     },
     {
@@ -338,25 +466,27 @@ export const businessPage = {
       ],
     },
     {
-      icon: 'Building2',
-      title: 'Architecture & Design',
+      icon: 'Code2',
+      title: 'Software, ML & AI Engineering',
       summary:
-        'Enterprise architecture that balances performance, maintainability, and long-term cost of ownership.',
+        'Full-lifecycle software delivery integrated with machine learning and AI capabilities for production-grade products.',
       points: [
-        'Target-state architecture, domain modeling, and modernization roadmaps',
-        'Cloud-native and hybrid designs with clear service boundaries',
-        'Technical standards that improve delivery consistency across teams',
+        'Product discovery through delivery with senior full-stack ownership across web, cloud, and enterprise platforms',
+        'API platforms, data services, and customer-facing applications engineered for scale and reliability',
+        'ML model development, training pipelines, feature stores, and inference services in production',
+        'AI-enabled product features — recommendation, classification, NLP, computer vision — integrated into real workflows',
       ],
     },
     {
-      icon: 'Code2',
-      title: 'Software Development',
+      icon: 'Link2',
+      title: 'Blockchain Solutions',
       summary:
-        'Full-lifecycle engineering for web, cloud, and enterprise platforms built for production conditions.',
+        'Secure distributed systems engineered for transparency, auditability, and quantum-ready resilience in real-world operations.',
       points: [
-        'Product discovery through delivery with senior full-stack ownership',
-        'API platforms, data services, and customer-facing applications',
-        'Quality engineering, CI/CD, and maintainable codebases from day one',
+        'Smart contract design, implementation, and security-focused review practices',
+        'Tokenization, settlement, and decentralized workflow architectures',
+        'Integration of on-chain and off-chain systems for enterprise environments',
+        'Quantum integration — post-quantum cryptography, quantum-resistant key management, and hybrid classical–quantum security roadmaps',
       ],
     },
     {
@@ -392,33 +522,68 @@ export const industriesPage = {
       icon: 'Landmark',
       title: 'Financial Services',
       summary:
-        'Secure platforms for payments, risk, compliance, and customer experience.',
+        'Secure platforms and AI agents for payments, risk, compliance, and customer experience.',
       points: [
         'Modernization of legacy banking and capital-markets workflows',
-        'AI-assisted operations with auditability and policy controls',
+        'LLM agents for research, compliance operations, fraud signals, and service automation',
+        'AI-assisted operations with auditability, policy controls, and governed tool access',
         'Blockchain and distributed ledger solutions for settlement and provenance',
       ],
     },
     {
-      icon: 'HeartPulse',
-      title: 'Healthcare & Life Sciences',
+      icon: 'Shield',
+      title: 'Defense & Mission Support',
       summary:
-        'Systems that protect sensitive data while accelerating care and research workflows.',
+        'Secure software, embedded systems, and AI agents for mission-critical operational environments.',
       points: [
-        'Secure data platforms and interoperability-aware integrations',
-        'AI support for documentation, triage, and operational efficiency',
-        'Architecture designed for privacy, availability, and clinical reliability',
+        'Mission-support agents with strict access control, audit trails, and human oversight',
+        'Secure cloud, edge, and DevOps patterns for controlled operating environments',
+        'IoT, firmware, and robotics integrations where reliability and accountability are mandatory',
       ],
     },
     {
       icon: 'Factory',
       title: 'Manufacturing & Industrial',
       summary:
-        'Software and AI systems that improve visibility, throughput, and quality across operations.',
+        'Software, AI, and embedded systems that improve visibility, throughput, and quality across operations.',
       points: [
         'Operational intelligence and predictive maintenance capabilities',
-        'Integration of ERP, IoT, and shop-floor systems into coherent platforms',
-        'Secure cloud and edge architectures for industrial environments',
+        'Integration of ERP, IoT, firmware, and shop-floor systems into coherent platforms',
+        'Robotics (ROS), PCB/electronics bring-up, and secure edge architectures for industrial environments',
+      ],
+    },
+    {
+      icon: 'Clapperboard',
+      title: 'Media & Entertainment',
+      summary:
+        'Streaming platforms and content protection systems for studios, broadcasters, and digital publishers.',
+      points: [
+        'Live and VOD platforms with adaptive streaming and global CDN delivery',
+        'DRM, license management, forensic watermarking, and anti-piracy controls',
+        'Secure player apps, entitlement systems, and subscriber experience platforms',
+      ],
+    },
+    {
+      icon: 'HeartPulse',
+      title: 'Healthcare & Life Sciences',
+      summary:
+        'Systems and clinical-support agents that protect sensitive data while accelerating care workflows.',
+      points: [
+        'Secure data platforms and interoperability-aware integrations',
+        'AI agents for documentation support, care coordination, and knowledge retrieval',
+        'MCP-connected tools with privacy controls suitable for regulated environments',
+        'Architecture designed for availability, auditability, and clinical reliability',
+      ],
+    },
+    {
+      icon: 'Trophy',
+      title: 'Sports & Athletics',
+      summary:
+        'Analytics platforms and AI agents that improve performance insight, operations, and fan engagement.',
+      points: [
+        'Performance and scouting agents grounded in structured sports data and video insights',
+        'Operations automation for scheduling, logistics, and event workflows',
+        'Fan engagement and content systems with personalization and secure media delivery',
       ],
     },
     {
@@ -441,17 +606,6 @@ export const industriesPage = {
         'Tracking, orchestration, and exception-management platforms',
         'AI agents for planning support and operational decisioning',
         'Traceability solutions using modern data and blockchain patterns',
-      ],
-    },
-    {
-      icon: 'Clapperboard',
-      title: 'Media & Entertainment',
-      summary:
-        'Streaming platforms and content protection systems for studios, broadcasters, and digital publishers.',
-      points: [
-        'Live and VOD platforms with adaptive streaming and global CDN delivery',
-        'DRM, license management, forensic watermarking, and anti-piracy controls',
-        'Secure player apps, entitlement systems, and subscriber experience platforms',
       ],
     },
     {
@@ -479,7 +633,7 @@ export const researchPage = {
   subtitle:
     'Practical research that moves emerging technology from experiment to dependable product capability.',
   intro: [
-    'AtexSoft\u2019s research focus is applied by design. We study advances in AI agents, distributed systems, secure media delivery, and software architecture — then translate what works into repeatable engineering patterns for client delivery.',
+    'AtexSoft\u2019s research focus is applied by design. We study advances in AI agents, distributed systems, secure media delivery, embedded systems, and software architecture — then translate what works into repeatable engineering patterns for client delivery.',
     'Our research agenda prioritizes reliability, evaluation, security, and business usefulness over novelty for its own sake.',
   ],
   sections: [
@@ -487,11 +641,12 @@ export const researchPage = {
       icon: 'Bot',
       title: 'Agentic AI Systems',
       summary:
-        'Methods for building agents that plan, use tools, and remain controllable in production.',
+        'Methods for building LLM agents that plan, use tools via MCP, and remain controllable in production.',
       points: [
-        'Orchestration patterns for multi-step and multi-agent workflows',
-        'Memory, retrieval, and grounding strategies for enterprise contexts',
-        'Safety, permissions, and escalation models for high-impact actions',
+        'LLM orchestration patterns for multi-step and multi-agent workflows',
+        'MCP server design for safe tool access to enterprise systems and data',
+        'Memory, retrieval, grounding, and evaluation strategies for domain-specific agents',
+        'Safety, permissions, and escalation models for healthcare, finance, defense, and sports use cases',
       ],
     },
     {
@@ -520,11 +675,12 @@ export const researchPage = {
       icon: 'Network',
       title: 'Distributed Systems & Blockchain',
       summary:
-        'Research into scalable, verifiable architectures for multi-party digital processes.',
+        'Research into scalable, verifiable, and quantum-ready architectures for multi-party digital processes.',
       points: [
         'Smart contract patterns optimized for security and maintainability',
         'Hybrid on-chain / off-chain designs for enterprise workloads',
         'Provenance and integrity models for shared business data',
+        'Quantum-resistant cryptography and integration patterns for long-lived blockchain systems',
       ],
     },
     {
@@ -536,6 +692,17 @@ export const researchPage = {
         'Adaptive streaming pipelines, packaging strategies, and low-latency live architectures',
         'Multi-DRM models (Widevine, FairPlay, PlayReady) and resilient license workflows',
         'QoE analytics, watermarking approaches, and secure playback across devices and platforms',
+      ],
+    },
+    {
+      icon: 'CircuitBoard',
+      title: 'Embedded Systems & Robotics',
+      summary:
+        'Practical research for reliable IoT devices, firmware, ROS-based robotics, and manufacturable hardware.',
+      points: [
+        'Edge connectivity patterns, OTA update strategies, and device security for IoT fleets',
+        'Real-time firmware architectures and hardware-software co-design practices',
+        'ROS 2 system design, perception/control integration, PCB DFM, and mechanical packaging trade-offs',
       ],
     },
     {
@@ -574,7 +741,7 @@ export const newsPage = {
   subtitle:
     'Announcements and perspectives from AtexSoft LLC on technology, delivery, and growth.',
   intro: [
-    'Follow company milestones, capability expansions, and practical insights from our work across AI, blockchain, video streaming & DRM, architecture, and software engineering.',
+    'Follow company milestones, capability expansions, and practical insights from our work across AI, blockchain, video streaming & DRM, IoT & embedded systems, architecture, and software engineering.',
   ],
   items: [
     {
@@ -583,6 +750,13 @@ export const newsPage = {
       title: 'Architecture Decisions That Compound Over Time',
       excerpt:
         'How early choices around boundaries, data ownership, and delivery tooling determine whether a platform accelerates the business — or becomes expensive to change.',
+    },
+    {
+      date: 'November 2025',
+      category: 'Capabilities',
+      title: 'Expanding into IoT, Firmware & Embedded Hardware',
+      excerpt:
+        'AtexSoft adds a dedicated embedded practice covering IoT platforms, firmware, ROS robotics, PCB design, and mechanical engineering — enabling end-to-end product delivery from electronics to cloud.',
     },
     {
       date: 'October 2025',

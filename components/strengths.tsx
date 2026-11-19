@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { BrainCircuit, Link2, Building2, Code2, Users, MonitorPlay, type LucideIcon } from 'lucide-react';
+import { BrainCircuit, Link2, Building2, Code2, Users, MonitorPlay, CircuitBoard, CloudCog, type LucideIcon } from 'lucide-react';
 import { Reveal } from '@/components/reveal';
 import { strengths } from '@/lib/content';
 
@@ -10,6 +10,8 @@ const iconMap: Record<string, LucideIcon> = {
   Code2,
   Users,
   MonitorPlay,
+  CircuitBoard,
+  CloudCog,
 };
 
 export function Strengths() {

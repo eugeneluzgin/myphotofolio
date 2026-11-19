@@ -116,10 +116,11 @@ export function ContactForm() {
               Select a topic
             </option>
             <option>AI Agent Development</option>
-            <option>Blockchain Solutions</option>
+            <option>Architecture, Cloud & DevOps</option>
+            <option>IoT, Firmware & Embedded</option>
             <option>Video Streaming & DRM</option>
-            <option>Architecture & Design</option>
-            <option>Software Development</option>
+            <option>Software, ML & AI Engineering</option>
+            <option>Blockchain Solutions</option>
             <option>Consultant & Advisory</option>
             <option>Partnerships & Media</option>
             <option>Other</option>
