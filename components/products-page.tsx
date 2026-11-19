@@ -26,19 +26,21 @@ export function ProductsPageView() {
               {productsPage.title}
             </h1>
             <div className="w-16 h-1 bg-gradient-to-r from-blue-600 to-sky-400 rounded-full mb-4" />
-            <p className="text-base sm:text-lg text-slate-700 font-medium max-w-3xl mb-2 leading-snug">
+            <p className="text-base sm:text-lg text-slate-700 font-medium max-w-3xl leading-snug">
               {productsPage.subtitle}
             </p>
-            <div className="max-w-3xl">
-              {productsPage.intro.map((paragraph) => (
-                <p
-                  key={paragraph.slice(0, 48)}
-                  className="text-sm sm:text-base text-slate-600 leading-relaxed"
-                >
-                  {paragraph}
-                </p>
-              ))}
-            </div>
+            {productsPage.intro.length > 0 && (
+              <div className="mt-2 max-w-3xl space-y-2">
+                {productsPage.intro.map((paragraph) => (
+                  <p
+                    key={paragraph}
+                    className="text-sm sm:text-base text-slate-600 leading-relaxed"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            )}
           </Reveal>
         </div>
       </section>

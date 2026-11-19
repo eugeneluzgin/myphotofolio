@@ -225,7 +225,7 @@ export const productsPage = {
   title: 'Products',
   subtitle:
     'A growing portfolio of products we design, engineer, and manufacture — from concept through production.',
-  intro: [],
+  intro: [] as string[],
   catalogTitle: 'All Products',
   catalogIntro:
     'Select a product to open its detail page with gallery, technical details, and media.',
