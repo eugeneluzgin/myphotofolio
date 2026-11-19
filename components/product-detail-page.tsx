@@ -65,26 +65,24 @@ export function ProductDetailPageView({ productIndex }: ProductDetailPageProps) 
         <div className="relative mx-auto max-w-7xl px-6">
           <Reveal>
             <article className="rounded-3xl bg-white border border-slate-100 overflow-hidden shadow-sm">
-              <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
-                <div className="lg:col-span-3 p-5 sm:p-6 lg:p-8">
-                  <ProductImageSlider images={product.images} />
-                </div>
-                <div className="lg:col-span-2 p-7 sm:p-8 lg:pl-0 flex flex-col justify-center">
-                  <h2 className="text-xl font-bold text-slate-900 mb-4">
-                    Engineering highlights
-                  </h2>
-                  <ul className="space-y-3">
-                    {product.highlights.map((item) => (
-                      <li
-                        key={item}
-                        className="flex gap-3 text-sm text-slate-600 leading-relaxed"
-                      >
-                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              <div className="p-4 sm:p-5 lg:p-6">
+                <ProductImageSlider images={product.images} />
+              </div>
+              <div className="border-t border-slate-100 px-6 sm:px-8 py-7 sm:py-8">
+                <h2 className="text-xl font-bold text-slate-900 mb-4">
+                  Engineering highlights
+                </h2>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+                  {product.highlights.map((item) => (
+                    <li
+                      key={item}
+                      className="flex gap-3 text-sm text-slate-600 leading-relaxed"
+                    >
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </article>
           </Reveal>

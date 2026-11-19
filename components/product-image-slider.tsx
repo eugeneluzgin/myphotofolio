@@ -19,7 +19,7 @@ export function ProductImageSlider({ images }: { images: ProductImage[] }) {
 
   return (
     <div className="w-full">
-      <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-slate-100">
+      <div className="relative w-full aspect-[16/9] sm:aspect-[2/1] overflow-hidden rounded-2xl bg-slate-100">
         {images.map((image, idx) => (
           <div
             key={image.src}
@@ -31,8 +31,8 @@ export function ProductImageSlider({ images }: { images: ProductImage[] }) {
               src={image.src}
               alt={image.alt}
               fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 60vw"
+              className="object-contain"
+              sizes="100vw"
               priority={idx === 0}
             />
           </div>
