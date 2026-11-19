@@ -166,11 +166,6 @@ export function HeroSlider() {
         ))}
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 right-8 z-30 hidden sm:flex flex-col items-center gap-2 text-white/60">
-        <span className="text-xs uppercase tracking-widest font-medium">Scroll</span>
-        <div className="w-px h-12 bg-gradient-to-b from-white/60 to-transparent" />
-      </div>
     </section>
   );
 }

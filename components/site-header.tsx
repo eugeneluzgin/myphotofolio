@@ -25,48 +25,58 @@ export function SiteHeader() {
     return pathname.startsWith(href);
   };
 
+  // Light pages (Business, Industries, Products, etc.) need dark nav text from the start
+  const lightHeader = scrolled || pathname !== '/';
+
   return (
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
-        scrolled
+        lightHeader
           ? 'bg-white/90 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.06)] py-3'
           : 'bg-transparent py-5'
       )}
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
         <Link href="/" aria-label="AtexSoft LLC home">
-          <Logo onDark={!scrolled} />
+          <Logo onDark={!lightHeader} />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
-          {navItems.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className={cn(
-                'relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 group',
-                scrolled
-                  ? 'text-slate-700 hover:text-blue-600 hover:bg-blue-50/50'
-                  : 'text-white/90 hover:text-white hover:bg-white/10'
-              )}
-            >
-              {item.label}
-              <span
+          {navItems.map((item) => {
+            const active = isActive(item.href);
+            return (
+              <Link
+                key={item.label}
+                href={item.href}
                 className={cn(
-                  'absolute inset-x-4 -bottom-0.5 h-0.5 rounded-full transition-transform duration-300 origin-left',
-                  scrolled ? 'bg-blue-500' : 'bg-white',
-                  isActive(item.href) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+                  'relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 group',
+                  lightHeader
+                    ? active
+                      ? 'text-blue-700 bg-blue-50'
+                      : 'text-slate-700 hover:text-blue-600 hover:bg-blue-50/50'
+                    : active
+                      ? 'text-white bg-white/20'
+                      : 'text-white/90 hover:text-white hover:bg-white/10'
                 )}
-              />
-            </Link>
-          ))}
+              >
+                {item.label}
+                <span
+                  className={cn(
+                    'absolute inset-x-4 -bottom-0.5 h-0.5 rounded-full transition-transform duration-300 origin-left',
+                    lightHeader ? 'bg-blue-600' : 'bg-white',
+                    active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+                  )}
+                />
+              </Link>
+            );
+          })}
         </nav>
 
         <button
           className={cn(
             'lg:hidden p-2 rounded-lg transition-colors',
-            scrolled ? 'text-slate-700 hover:bg-slate-100' : 'text-white hover:bg-white/10'
+            lightHeader ? 'text-slate-700 hover:bg-slate-100' : 'text-white hover:bg-white/10'
           )}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"

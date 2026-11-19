@@ -7,7 +7,6 @@ import {
   GraduationCap,
   Phone,
   Mail,
-  Globe,
   type LucideIcon,
 } from 'lucide-react';
 import { Reveal } from '@/components/reveal';
@@ -78,41 +77,6 @@ export function CompanyOverview() {
                 })}
               </tbody>
             </table>
-          </div>
-        </Reveal>
-
-        <Reveal delay={400}>
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="flex items-center gap-3 p-5 rounded-2xl bg-gradient-to-br from-blue-50 to-sky-50 border border-blue-100 hover:shadow-lg transition-all">
-              <Phone className="h-5 w-5 text-blue-600 shrink-0" />
-              <span className="text-sm text-slate-700 font-medium">
-                {companyInfo.phone}
-              </span>
-            </div>
-            <div className="flex items-center gap-3 p-5 rounded-2xl bg-gradient-to-br from-blue-50 to-sky-50 border border-blue-100 hover:shadow-lg transition-all">
-              <Phone className="h-5 w-5 text-blue-600 shrink-0" />
-              <span className="text-sm text-slate-700 font-medium">
-                {companyInfo.salesPhone}
-              </span>
-            </div>
-            <div className="flex items-center gap-3 p-5 rounded-2xl bg-gradient-to-br from-blue-50 to-sky-50 border border-blue-100 hover:shadow-lg transition-all">
-              <Mail className="h-5 w-5 text-blue-600 shrink-0" />
-              <span className="text-sm text-slate-700 font-medium">
-                {companyInfo.email}
-              </span>
-            </div>
-            <div className="flex items-center gap-3 p-5 rounded-2xl bg-gradient-to-br from-blue-50 to-sky-50 border border-blue-100 hover:shadow-lg transition-all">
-              <Mail className="h-5 w-5 text-blue-600 shrink-0" />
-              <span className="text-sm text-slate-700 font-medium">
-                {companyInfo.salesEmail}
-              </span>
-            </div>
-            <div className="flex items-center gap-3 p-5 rounded-2xl bg-gradient-to-br from-blue-50 to-sky-50 border border-blue-100 hover:shadow-lg transition-all sm:col-span-2 lg:col-span-1">
-              <Globe className="h-5 w-5 text-blue-600 shrink-0" />
-              <span className="text-sm text-slate-700 font-medium">
-                {companyInfo.website}
-              </span>
-            </div>
           </div>
         </Reveal>
       </div>
