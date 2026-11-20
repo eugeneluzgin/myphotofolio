@@ -335,8 +335,8 @@ export const productsPage = {
           alt: 'ESP32-S3 TinyML sensing architecture',
         },
         {
-          src: '/products/lidar-robot-infographic-3.jpg',
-          alt: 'Exploded hardware view of LiDAR cleaning robot',
+          src: '/products/lidar-robot-cleaning.jpg',
+          alt: 'LiDAR auto-clean robot cleaning in a modern home',
         },
       ],
     },
