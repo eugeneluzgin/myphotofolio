@@ -340,6 +340,39 @@ export const productsPage = {
         },
       ],
     },
+    {
+      id: 'acf-bonding-facility',
+      name: 'ACF Bonding Facility & ControlX Application',
+      industries: ['Manufacturing & Industrial'],
+      coverImage: '/products/acf-bonding-home.jpg',
+      summary:
+        'A precision anisotropic conductive film (ACF) bonding manufacturing facility with a PySide desktop control application — integrating YOLO vision, QR detection, IDS cameras, AMADA MIYACHI UF-4000A pulsed heat control, and CLICK PLC machine I/O.',
+      highlights: [
+        'PySide (Qt for Python) desktop application (ControlX) for work orders, recipes, process control, and system status',
+        'YOLO-based bonding-point detection and QR code reading via IDS industrial cameras',
+        'AMADA MIYACHI UF-4000A pulsed heat control with multi-stage temperature and force profiles',
+        'CLICK PLUS PLC for machine sequencing, motion, and industrial I/O integration',
+        'End-to-end facility manufacturing: thermal press, vision alignment, and operator-ready production workflows',
+      ],
+      images: [
+        {
+          src: '/products/acf-bonding-home.jpg',
+          alt: 'Technician operating ACF bonding system with ControlX application',
+        },
+        {
+          src: '/products/acf-bonding-workcell.jpg',
+          alt: 'ACF bonding workcell with UF-4000A and ControlX desktop application',
+        },
+        {
+          src: '/products/acf-bonding-control.jpg',
+          alt: 'ControlX PySide application with IDS camera feeds and process controls',
+        },
+        {
+          src: '/products/acf-bonding-components.jpg',
+          alt: 'IDS camera, UF-4000A, CLICK PLC, and thermal press components',
+        },
+      ],
+    },
   ],
   closing:
     'This portfolio continues to expand as new products are designed and delivered. Share your next concept — we will help take it from idea to production-ready hardware and software.',
