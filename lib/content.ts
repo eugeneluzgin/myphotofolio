@@ -373,6 +373,35 @@ export const productsPage = {
         },
       ],
     },
+    {
+      id: 'ble-impact-asset-sensor',
+      name: 'Miniature BLE Wireless Impact & Asset Monitoring Sensor',
+      industries: ['Manufacturing & Industrial', 'Logistics & Supply Chain'],
+      coverImage: '/products/ble-sensor-home.jpg',
+      summary:
+        'A compact, battery-powered IoT sensor designed for industrial equipment monitoring and asset tracking. It integrates a miniature RF PCB, BLE connectivity, a MEMS accelerometer, and protective resin encapsulation. The device is designed to detect vibration, movement, and impact events and transmit sensor data, signal strength, and battery status to a smartphone application.',
+      highlights: [
+        'Ultra-low power BLE design for long battery life in industrial deployments',
+        'MEMS accelerometer for vibration, movement, and impact event detection',
+        'Miniature RF PCB with protective resin encapsulation for shock resistance',
+        'Smartphone Asset Monitor app connectivity for RSSI, events, and battery status',
+        'Concept optimized for compact size and cost-effective mass production',
+      ],
+      images: [
+        {
+          src: '/products/ble-sensor-home.jpg',
+          alt: 'BLE impact sensor mounted on industrial motor with Asset Monitor app',
+        },
+        {
+          src: '/products/ble-sensor-prototype.jpg',
+          alt: 'BLE sensor PCB prototype, enclosure, and design notes',
+        },
+        {
+          src: '/products/ble-sensor-datasheet.jpg',
+          alt: 'Miniature BLE impact and asset tracking sensor design datasheet',
+        },
+      ],
+    },
   ],
   closing:
     'This portfolio continues to expand as new products are designed and delivered. Share your next concept — we will help take it from idea to production-ready hardware and software.',
